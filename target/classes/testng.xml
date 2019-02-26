@@ -5,10 +5,37 @@
         <classes>
             <class name="Tests">
                 <methods>
-                    <include name="">
-                        <parameter name="sendkeyslocators" value="email_create"/>
-                        <parameter name="sendkeys" value="email_create=asd@mail"/>
-                        <parameter name="buttonlocators" value="SubmitCreate"/>
+                    <include name="checkGetRequest">
+                        <parameter name="amount" value="3900000"/>
+                        <parameter name="item_1_price" value="300000"/>
+                        <parameter name="item_1_name" value="carrotsbox"/>
+                        <parameter name="item_1_quantity" value="1"/>
+                        <parameter name="item_2_price" value="3000000"/>
+                        <parameter name="item_2_name" value="carrotsbox"/>
+                        <parameter name="item_2_quantity" value="1"/>
+                        <parameter name="item_3_price" value="300000"/>
+                        <parameter name="item_3_name" value="carrotsbox"/>
+                        <parameter name="item_3_quantity" value="2"/>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="VerefycaionGetRequest_2">
+        <classes>
+            <class name="Tests">
+                <methods>
+                    <include name="checkGetRequest">
+                        <parameter name="amount" value="3900000"/>
+                        <parameter name="item_1_price" value="300000"/>
+                        <parameter name="item_1_name" value="carrotsbox"/>
+                        <parameter name="item_1_quantity" value="1"/>
+                        <parameter name="item_2_price" value="3000000"/>
+                        <parameter name="item_2_name" value="carrotsbox"/>
+                        <parameter name="item_2_quantity" value="1"/>
+                        <parameter name="item_3_price" value="300000"/>
+                        <parameter name="item_3_name" value="carrotsbox"/>
+                        <parameter name="item_3_quantity" value="2"/>
                     </include>
                 </methods>
             </class>
