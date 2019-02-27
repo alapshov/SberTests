@@ -1,7 +1,7 @@
 package testManager;
 import dataManager.Item;
 import org.openqa.selenium.By;
-import pages.UrlAreaPage;
+import pages.BuyWithSberbankPage;
 import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 
@@ -13,7 +13,7 @@ public class CreateMapElements {
 
     public  ArrayList<Item>  mapElements() {
 
-        for (WebElement element : new UrlAreaPage().getDetailedElements()) {
+        for (WebElement element : new  BuyWithSberbankPage().getDetailedElements()) {
             item.setPositionId(element.findElement(By.className("order-count")).getAttribute("textContent"));
             item.setName(element.findElement(By.className("order-describe")).getAttribute("textContent"));
             item.setQuantity(element.findElement(By.tagName("nobr")).getAttribute("textContent"));
