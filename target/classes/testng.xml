@@ -5,7 +5,6 @@
         <classes>
             <class name="Tests">
                 <methods>
-                    <include name="checkGetRequest">
                         <parameter name="amount" value="3900000"/>
                         <parameter name="item_1_positionID" value="1"/>
                         <parameter name="item_1_price" value="300000"/>
@@ -22,7 +21,6 @@
                         <parameter name="item_3_name" value="carrotsbox"/>
                         <parameter name="item_3_quantity" value="2"/>
                         <parameter name="item_3_amount" value="600000"/>
-                    </include>
                 </methods>
             </class>
         </classes>

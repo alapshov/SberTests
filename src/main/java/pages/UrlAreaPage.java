@@ -1,14 +1,13 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import pages.BuyWithSberbankPage;
 import testManager.CreateGetRequest;
 import webdriver.InizializeWebDriver;
-import java.util.List;
 
 public class UrlAreaPage extends InizializeWebDriver {
 
-    public void executeGetRequest(String amount, String item_1_name, String item_1_quantity, String item_1_amount, String item_1_price,
+    public UrlAreaPage executeGetRequest(String amount, String item_1_name, String item_1_quantity, String item_1_amount, String item_1_price,
                                   String item_2_name, String item_2_quantity, String item_2_amount, String item_2_price,
                                   String item_3_name, String item_3_quantity, String item_3_amount, String item_3_price) {
         wd.findElement(By.id("urlTextarea")).clear();
@@ -24,12 +23,17 @@ public class UrlAreaPage extends InizializeWebDriver {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        return new UrlAreaPage();
     }
 
-    public UrlAreaPage openRBSPage() {
+    /**
+     * Открываем страницу с детализаций заказа
+     * @return
+     */
+    public BuyWithSberbankPage openRBSPage() {
 
         wd.findElement(By.id("redirectLink")).click();
-        return new UrlAreaPage();
+        return new BuyWithSberbankPage();
     }
 
 }

@@ -19,6 +19,7 @@ public class InizializeWebDriver {
     }
 
     public static void quitChromeDriver() {
+        wd.close();
         wd.quit();
     }
 
