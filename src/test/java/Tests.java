@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.UrlAreaPage;
 import testManager.CartListCreator;
+import testManager.CompareList;
 import webdriver.InizializeWebDriver;
 
 import java.util.ArrayList;
@@ -67,6 +68,8 @@ public class Tests extends InizializeWebDriver {
         ArrayList<Item> listTestData = listCreator.getCartTestDataList();
         listCreator.createCartPageList(elements);
         ArrayList<Item> listPageData = listCreator.getCartPageList();
+        
+        Assert.assertTrue(new CompareList().compare(listTestData,listPageData)==1);
 
 
     }
