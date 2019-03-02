@@ -25,10 +25,10 @@ public class Tests extends InizializeWebDriver {
      * Проверка Amount
      */
     @Test()
-    @Parameters({"amount", "item_1_positionID", "item_1_name", "item_1_quantity", "item_1_amount", "item_1_price",
+    @Parameters({"amount","measure", "item_1_positionID", "item_1_name", "item_1_quantity", "item_1_amount", "item_1_price",
             "item_2_positionID", "item_2_name", "item_2_quantity", "item_2_amount", "item_2_price",
             "item_3_positionID", "item_3_name", "item_3_quantity", "item_3_amount", "item_3_price"})
-    public void checkAmount(String amount, String item_1_positionID, String item_1_name, String item_1_quantity, String item_1_amount, String item_1_price,
+    public void checkAmount(String amount, String measure, String item_1_positionID, String item_1_name, String item_1_quantity, String item_1_amount, String item_1_price,
                             String item_2_positionID, String item_2_name, String item_2_quantity, String item_2_amount, String item_2_price,
                             String item_3_positionID, String item_3_name, String item_3_quantity, String item_3_amount, String item_3_price) {
         String expectedAmount = urlAreaPage.executeGetRequest(amount, item_1_name, item_1_quantity,
@@ -41,12 +41,30 @@ public class Tests extends InizializeWebDriver {
         Assert.assertEquals(expectedAmount, amount);
 
     }
-
     @Test()
-    @Parameters({"amount", "item_1_positionID", "item_1_name", "item_1_quantity", "item_1_amount", "item_1_price",
+    @Parameters({"amount","measure", "item_1_positionID", "item_1_name", "item_1_quantity", "item_1_amount", "item_1_price",
             "item_2_positionID", "item_2_name", "item_2_quantity", "item_2_amount", "item_2_price",
             "item_3_positionID", "item_3_name", "item_3_quantity", "item_3_amount", "item_3_price"})
-    public void checkAutorizationPage(String amount, String item_1_positionID, String item_1_name, String item_1_quantity, String item_1_amount, String item_1_price,
+    public void checkPositionCart(String amount, String measure, String item_1_positionID, String item_1_name, String item_1_quantity, String item_1_amount, String item_1_price,
+                                      String item_2_positionID, String item_2_name, String item_2_quantity, String item_2_amount, String item_2_price,
+                                      String item_3_positionID, String item_3_name, String item_3_quantity, String item_3_amount, String item_3_price) {
+        urlAreaPage.executeGetRequest(amount, item_1_name, item_1_quantity,
+                item_1_amount, item_1_price, item_2_name, item_2_quantity, item_2_amount, item_2_price, item_3_name, item_3_quantity, item_3_amount,
+                item_3_price)
+                .openRBSPage()
+                .getDetailedElements();
+
+    }
+
+    /**
+     * Проверка перехода на страницу авторизации из корзины
+     */
+
+    @Test()
+    @Parameters({"amount","measure", "item_1_positionID", "item_1_name", "item_1_quantity", "item_1_amount", "item_1_price",
+            "item_2_positionID", "item_2_name", "item_2_quantity", "item_2_amount", "item_2_price",
+            "item_3_positionID", "item_3_name", "item_3_quantity", "item_3_amount", "item_3_price"})
+    public void checkAutorizationPage(String amount, String measure, String item_1_positionID, String item_1_name, String item_1_quantity, String item_1_amount, String item_1_price,
                                       String item_2_positionID, String item_2_name, String item_2_quantity, String item_2_amount, String item_2_price,
                                       String item_3_positionID, String item_3_name, String item_3_quantity, String item_3_amount, String item_3_price) {
         urlAreaPage.executeGetRequest(amount, item_1_name, item_1_quantity,
@@ -55,7 +73,6 @@ public class Tests extends InizializeWebDriver {
                 .openRBSPage()
                 .applyButton()
                 .findElementsAutorizationPage();
-
     }
 
 }

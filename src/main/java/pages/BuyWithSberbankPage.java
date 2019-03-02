@@ -18,7 +18,8 @@ public class BuyWithSberbankPage extends InizializeWebDriver {
      * @return
      */
     public List<WebElement> getDetailedElements() {
-        elements = wd.findElements(By.cssSelector(".order-row"));
+        selectTab.tabSelector(wd);
+        elements = wd.findElements(By.className("order-row"));
         int i = elements.size();
         return elements;
     }

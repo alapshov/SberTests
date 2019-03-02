@@ -5,7 +5,7 @@ public class Item {
         return positionId;
     }
 
-    public void setPositionId(String positionId) {
+    private void setPositionId(String positionId) {
         this.positionId = positionId;
     }
 
@@ -15,7 +15,7 @@ public class Item {
         return name;
     }
 
-    public void setName(String name) {
+    private void setName(String name) {
         this.name = name;
     }
 
@@ -25,9 +25,21 @@ public class Item {
         return quantity;
     }
 
-    public void setQuantity(String quantity) {
+    private void setQuantity(String quantity) {
         this.quantity = quantity;
     }
 
     private String quantity;
+
+    /**
+     * Конструкторв класса, создает item карзины
+     * @param positionId
+     * @param name
+     * @param quantity
+     */
+    public void item(String positionId, String name, String quantity ){
+        setPositionId(positionId);
+        setName(name);
+        setQuantity(quantity);
+    }
 }

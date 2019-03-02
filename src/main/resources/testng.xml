@@ -21,6 +21,7 @@
                         <parameter name="item_3_name" value="carrotsbox"/>
                         <parameter name="item_3_quantity" value="2"/>
                         <parameter name="item_3_amount" value="600000"/>
+                        <parameter name="measure" value="шт."/>
                 </methods>
             </class>
         </classes>
