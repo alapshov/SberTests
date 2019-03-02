@@ -2,7 +2,7 @@ package dataManager;
 
 import java.util.ArrayList;
 
-public class positionsCart {
+public class PositionsCart {
 
     public ArrayList<Item> getPositonsSite() {
         return positonsSite;

@@ -13,12 +13,12 @@
                         <parameter name="item_1_amount" value="300000"/>
                         <parameter name="item_2_positionID" value="2"/>
                         <parameter name="item_2_price" value="3000000"/>
-                        <parameter name="item_2_name" value="carrotsbox"/>
+                        <parameter name="item_2_name" value="applesbox"/>
                         <parameter name="item_2_quantity" value="1"/>
                         <parameter name="item_2_amount" value="3000000"/>
                         <parameter name="item_3_positionID" value="3"/>
                         <parameter name="item_3_price" value="300000"/>
-                        <parameter name="item_3_name" value="carrotsbox"/>
+                        <parameter name="item_3_name" value="applesbox"/>
                         <parameter name="item_3_quantity" value="2"/>
                         <parameter name="item_3_amount" value="600000"/>
                         <parameter name="measure" value="шт."/>

@@ -15,15 +15,15 @@ public class Item {
         return name;
     }
 
+    public String getQuantity() {
+        return quantity;
+    }
+
     private void setName(String name) {
         this.name = name;
     }
 
     private String name;
-
-    public String getQuantity() {
-        return quantity;
-    }
 
     private void setQuantity(String quantity) {
         this.quantity = quantity;
@@ -37,7 +37,8 @@ public class Item {
      * @param name
      * @param quantity
      */
-    public void item(String positionId, String name, String quantity ){
+
+    public Item (String positionId, String name, String quantity ){
         setPositionId(positionId);
         setName(name);
         setQuantity(quantity);
