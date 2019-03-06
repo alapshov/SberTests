@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-GetRequestTest">
+              <span class="suite-name border-failed">GetRequestTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-GetRequestTest">
+                    <span>D:\Программирование\GitRepository\SberTests_Eclpise\src\main\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-GetRequestTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-GetRequestTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-GetRequestTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-GetRequestTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-GetRequestTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-GetRequestTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-GetRequestTest" class="hide-methods failed suite-GetRequestTest"> (hide)</a> <!-- hide-methods failed suite-GetRequestTest -->
+                      <a href="#" panel-name="suite-GetRequestTest" class="show-methods failed suite-GetRequestTest"> (show)</a> <!-- show-methods failed suite-GetRequestTest -->
+                    </span>
+                    <div class="method-list-content failed suite-GetRequestTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GetRequestTest" title="Tests" hash-for-method="checkAutorizationPage(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)">checkAutorizationPage(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-GetRequestTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-GetRequestTest" class="hide-methods passed suite-GetRequestTest"> (hide)</a> <!-- hide-methods passed suite-GetRequestTest -->
+                      <a href="#" panel-name="suite-GetRequestTest" class="show-methods passed suite-GetRequestTest"> (show)</a> <!-- show-methods passed suite-GetRequestTest -->
+                    </span>
+                    <div class="method-list-content passed suite-GetRequestTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GetRequestTest" title="Tests" hash-for-method="checkAmount(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)">checkAmount(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GetRequestTest" title="Tests" hash-for-method="checkPositionCart(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)">checkPositionCart(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-GetRequestTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-GetRequestTest" class="panel GetRequestTest">
+          <div class="suite-GetRequestTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAutorizationPage(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)">
+                  </a> <!-- checkAutorizationPage(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...) -->
+                  <span class="method-name">checkAutorizationPage</span>
+                  <span class="parameters">(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, 600000, 300000)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;enterLogin&quot;}
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-G26GLHD&apos;, ip: &apos;192.168.1.71&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\CD86~1\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50970}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 307c13abf7cea2765e5f2ac279b77530
+*** Element info: {Using=id, value=enterLogin}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.AutorizationPage.findElementsAutorizationPage(AutorizationPage.java:11)
+	at Tests.checkAutorizationPage(Tests.java:93)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GetRequestTest-class-failed -->
+          <div class="suite-GetRequestTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAmount(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)">
+                  </a> <!-- checkAmount(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...) -->
+                  <span class="method-name">checkAmount</span>
+                  <span class="parameters">(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, 600000, 300000)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPositionCart(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)">
+                  </a> <!-- checkPositionCart(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...) -->
+                  <span class="method-name">checkPositionCart</span>
+                  <span class="parameters">(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, 600000, 300000)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GetRequestTest-class-passed -->
+        </div> <!-- panel GetRequestTest -->
+        <div panel-name="test-xml-GetRequestTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Программирование\GitRepository\SberTests_Eclpise\src\main\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;GetRequestTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;VerefycaionGetRequest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests&quot;&gt;
+        &lt;parameter name=&quot;item_2_name&quot; value=&quot;applesbox&quot;/&gt;
+        &lt;parameter name=&quot;amount&quot; value=&quot;3900000&quot;/&gt;
+        &lt;parameter name=&quot;item_3_quantity&quot; value=&quot;2&quot;/&gt;
+        &lt;parameter name=&quot;item_1_quantity&quot; value=&quot;1&quot;/&gt;
+        &lt;parameter name=&quot;item_3_positionID&quot; value=&quot;3&quot;/&gt;
+        &lt;parameter name=&quot;item_1_positionID&quot; value=&quot;1&quot;/&gt;
+        &lt;parameter name=&quot;item_2_price&quot; value=&quot;3000000&quot;/&gt;
+        &lt;parameter name=&quot;item_2_quantity&quot; value=&quot;1&quot;/&gt;
+        &lt;parameter name=&quot;measure&quot; value=&quot;шт.&quot;/&gt;
+        &lt;parameter name=&quot;item_1_name&quot; value=&quot;carrotsbox&quot;/&gt;
+        &lt;parameter name=&quot;item_3_price&quot; value=&quot;300000&quot;/&gt;
+        &lt;parameter name=&quot;item_1_amount&quot; value=&quot;300000&quot;/&gt;
+        &lt;parameter name=&quot;item_2_amount&quot; value=&quot;3000000&quot;/&gt;
+        &lt;parameter name=&quot;item_3_amount&quot; value=&quot;600000&quot;/&gt;
+        &lt;parameter name=&quot;item_1_price&quot; value=&quot;300000&quot;/&gt;
+        &lt;parameter name=&quot;item_2_positionID&quot; value=&quot;2&quot;/&gt;
+        &lt;parameter name=&quot;item_3_name&quot; value=&quot;applesbox&quot;/&gt;
+      &lt;/class&gt; &lt;!-- Tests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- VerefycaionGetRequest --&gt;
+&lt;/suite&gt; &lt;!-- GetRequestTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-GetRequestTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for GetRequestTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">VerefycaionGetRequest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-GetRequestTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for GetRequestTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-GetRequestTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for GetRequestTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_GetRequestTest');
+function tableData_GetRequestTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkAmount')
+data.setCell(0, 2, 'Tests')
+data.setCell(0, 3, 73575);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkAutorizationPage')
+data.setCell(1, 2, 'Tests')
+data.setCell(1, 3, 21667);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkPositionCart')
+data.setCell(2, 2, 'Tests')
+data.setCell(2, 3, 9027);
+window.suiteTableData['GetRequestTest']= { tableData: data, tableDiv: 'times-div-GetRequestTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-GetRequestTest">
+              </div> <!-- times-div-GetRequestTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-GetRequestTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for GetRequestTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-GetRequestTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-GetRequestTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkAmount(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)</span>
+                <span class="method-start">4208 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">77784 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">78380 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkAutorizationPage(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)</span>
+                <span class="method-start">81854 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">103523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">104117 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkPositionCart(3900000, шт., 1, carrotsbox, 1, 300000, 300000, 2, applesbox, 1, 3000000, 3000000, 3, applesbox, 2, ...)</span>
+                <span class="method-start">107657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">116685 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

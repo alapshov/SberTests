@@ -1,7 +1,6 @@
 package testManager;
 
 import org.openqa.selenium.WebDriver;
-import pages.BuyWithSberbankPage;
 
 import java.util.ArrayList;
 
@@ -18,8 +17,7 @@ public class SelectTab {
     /**
      *Переключение на новую вкладку
      */
-    public BuyWithSberbankPage tabSelector(WebDriver wd){
-        wd.switchTo().window(getTabs(wd).get(getTabs(wd).size()-1));
-        return new BuyWithSberbankPage();
+    public void tabSelector(WebDriver wd){
+        wd.switchTo().window(getTabs(wd).get(getTabs(wd).size()-1));        
     }
 }
