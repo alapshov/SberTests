@@ -9,8 +9,5 @@
         <module name="SberTests" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="SberTests" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -32,7 +32,7 @@ public class UrlAreaPage extends InizializeWebDriver {
      */
     public BuyWithSberbankPage openRBSPage() {
 
-        wd.findElement(By.id("redirectLink")).click();
+        wd.findElement(By.id("commonPageLink")).click();
         return new BuyWithSberbankPage();
     }
 
